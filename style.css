@@ -1,0 +1,28 @@
+
+.box {
+  
+  padding: 1px;
+  margin: 5px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+
+}
+.container {
+width: auto;
+max-width: fit-content;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
