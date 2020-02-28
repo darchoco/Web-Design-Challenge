@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title> Latitude vs X</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -41,3 +42,50 @@
               </form>
             </div>
           </nav>
+          
+            <div class="row">
+          <div class="col-sm-12 col-md-12 box bg-light">
+            <header>Data Comparisons</header> 
+            <article>
+            
+              <p>The purpose of the data was to show the trending of weather information based on the latitude of randomly chosen locations.
+                  The four data points are Cloudiness, Temperature, Humidity, and Windspeed. Please see the visualizations for how the data points change
+                  as the latitude changes.
+              </p>
+              <p>The data was provided from the OpenWeatherMap API by randomly generating over 500 locations using latitude and longitude.
+                  Once completed, the data was called from the API and compiled through Pandas and displayed through MatPlotLib to show trending.
+              </p>
+          </article>
+            <article>
+            <a  href="cloudiness.html">
+                <div class="column">
+            <img  class = "img-fluid" style="width:100%"  src="Visualizations/lat_vs_cloudiness.png" alt="lat vs cloudiness">
+            </div>
+        </a>
+        </article>
+        <article>
+            <a  href="humidity.html">
+                <div class="column">
+            <img  class = "img-fluid" style="width:100%"  src="Visualizations/lat_vs_humidity.png" alt="lat vs humidity">
+        </div>
+        </a>
+        </article>
+        <article>
+            <a  href="temp.html">
+                <div class="column"> 
+            <img  class = "img-fluid" style="width:100%"  src="Visualizations/lat_vs_temp.png" alt="lat vs temp">
+        </div>
+        </a>
+    </article>
+    <article>
+        <a  href="windspeed.html">
+            <div class="column">
+            <img class = "img-fluid" style="width:100%" src="Visualizations/lat_vs_windspeed.png" alt="lat vs windspeed">
+        </div>
+        </a>
+    </article>
+        </div>
+        </div>
+        </body>
+        </html>
+        
